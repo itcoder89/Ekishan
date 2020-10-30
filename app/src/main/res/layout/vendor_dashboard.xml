@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries." />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Categories"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textStyle="bold"></TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/category_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <RelativeLayout
+            android:id="@+id/approval_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ic_correct_large"></ImageView>
+            <TextView
+                android:id="@+id/thank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/icon"
+                android:textSize="17dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Thank you for submission"></TextView>
+
+            <TextView
+                android:id="@+id/pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/thank"
+                android:textSize="20dp"
+                android:textColor="@color/orange"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Approval Pending" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/pending"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/staff"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:id="@+id/staff_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:hint="Enter Staff ID"
+                    android:background="@color/color_white"
+                    android:backgroundTint="@color/color_white" />
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:id="@+id/rlupdate"
+                android:layout_width="150dp"
+                android:layout_height="40sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/yellow_bg_wound"
+                android:gravity="top"
+                android:layout_below="@+id/staff"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp">
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

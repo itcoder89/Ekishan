@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_order_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/noFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No orders found!"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"></TextView>
+
+</LinearLayout>

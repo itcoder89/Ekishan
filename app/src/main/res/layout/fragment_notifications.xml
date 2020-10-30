@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:background="#EBFFE5">
+        <RelativeLayout
+            android:id="@+id/alerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/alert"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/offerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/offers"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"></View>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alertRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/header" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/offerRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/noFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No alert notification found!"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/header"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/noFound1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No offers notification found!"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/header"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"></TextView>
+</RelativeLayout>

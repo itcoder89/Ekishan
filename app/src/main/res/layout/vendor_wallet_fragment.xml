@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/defoult_img1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:text="User ID - 0"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/yellow_bg_radius"
+            android:elevation="20sp"
+            android:paddingLeft="25sp"
+            android:paddingTop="8sp"
+            android:paddingRight="25sp"
+            android:paddingBottom="8sp"
+            android:text="@string/addplus"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/balance"
+            android:textColor="#B7C21C"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" Rs"
+                android:textColor="@color/orange_text"
+                android:textSize="18dp" />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="2"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/byCash"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:background="#B7C21C"
+            android:backgroundTint="#B7C21C">
+
+            <TextView
+                android:id="@+id/smallTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/request_by_cash"
+                android:textColor="@color/color_white"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/byBank"
+             android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_marginLeft="10sp"
+            android:background="#B7C21C"
+            android:layout_marginRight="30sp"
+            android:backgroundTint="#B7C21C">
+
+            <TextView
+                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/request_by_bank"
+                android:textColor="@color/color_white"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/transaction"
+        android:textColor="#B7C21C"
+        android:textSize="14sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_order_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/noFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No orders found!"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"></TextView>
+
+</LinearLayout>

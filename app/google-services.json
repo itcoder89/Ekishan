@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "843238756414",
+    "firebase_url": "https://e-kisan-277816.firebaseio.com",
+    "project_id": "e-kisan-277816",
+    "storage_bucket": "e-kisan-277816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843238756414:android:e302552e243fd1be52416f",
+        "android_client_info": {
+          "package_name": "com.android.ekishan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843238756414-p5r90jmod8s3v3oankdfjj0k9lcui5dn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ekishan",
+            "certificate_hash": "e609490818ef23bff46ccacf9e8676a89922a840"
+          }
+        },
+        {
+          "client_id": "843238756414-ino9gch0fefa8a98okkoev6k2l51ua9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ekishan",
+            "certificate_hash": "47b2134dbc299ff7a58438009a67bcf4b2bc61a7"
+          }
+        },
+        {
+          "client_id": "843238756414-n4s0framn3b78k63vd5626miep433spb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ekishan",
+            "certificate_hash": "9610a8c8db203ee198d66d4ac9fd1691d4f1604c"
+          }
+        },
+        {
+          "client_id": "843238756414-chiluourbg9e9kuen1e8phmc8lollkr9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ekishan",
+            "certificate_hash": "ae9dbc40929f920bff4b028fa4fb1cafe8751b8e"
+          }
+        },
+        {
+          "client_id": "843238756414-p5bl10ibfpecl3q2tcjalsdibat0ajh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUi9WCQycnYp5OHLaZcwsnWoDSzUPPJFY"
+        },
+        {
+          "current_key": "AIzaSyDgWF1rTEG1g7_IMWP9ZvxE5lqTefY_NKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843238756414-p5bl10ibfpecl3q2tcjalsdibat0ajh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843238756414:android:9e560f57699b864252416f",
+        "android_client_info": {
+          "package_name": "com.drivedigital.ekisan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843238756414-anabbls28k3eu8ds0lauqftvkmtdigqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drivedigital.ekisan",
+            "certificate_hash": "ae9dbc40929f920bff4b028fa4fb1cafe8751b8e"
+          }
+        },
+        {
+          "client_id": "843238756414-p5bl10ibfpecl3q2tcjalsdibat0ajh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUi9WCQycnYp5OHLaZcwsnWoDSzUPPJFY"
+        },
+        {
+          "current_key": "AIzaSyDgWF1rTEG1g7_IMWP9ZvxE5lqTefY_NKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843238756414-p5bl10ibfpecl3q2tcjalsdibat0ajh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843238756414:android:ce1531406da3fe2452416f",
+        "android_client_info": {
+          "package_name": "com.drivedigital.ekishan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843238756414-a3jmft6iuuofg2ohvsuad18qt237bdeg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drivedigital.ekishan",
+            "certificate_hash": "47b2134dbc299ff7a58438009a67bcf4b2bc61a7"
+          }
+        },
+        {
+          "client_id": "843238756414-p5bl10ibfpecl3q2tcjalsdibat0ajh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUi9WCQycnYp5OHLaZcwsnWoDSzUPPJFY"
+        },
+        {
+          "current_key": "AIzaSyDgWF1rTEG1g7_IMWP9ZvxE5lqTefY_NKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843238756414-p5bl10ibfpecl3q2tcjalsdibat0ajh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

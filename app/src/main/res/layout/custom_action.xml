@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    android:id="@+id/customActionBar_llMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_green_color">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivDrawer"
+            android:layout_width="55.0dip"
+            android:layout_height="55dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_home_menu" />
+
+        <ImageView
+            android:id="@+id/logoClick"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/app_name"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:textSize="18.0dip" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cart"
+            android:layout_margin="7dp"
+            android:tint="@color/color_white"
+            android:layout_height="match_parent"></ImageView>
+        <TextView
+            android:id="@+id/cart_quantity"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/badge_background"/>
+    </RelativeLayout>
+</RelativeLayout>

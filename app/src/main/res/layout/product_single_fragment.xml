@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/addll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#FFE8EB">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image"
+                        android:layout_width="120dp"
+                        android:layout_marginTop="30sp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/place_holder" />
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_marginRight="15sp"
+                        android:layout_marginTop="10sp"
+                        android:src="@mipmap/favorite"
+                        android:tint="#B7C21C"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="20sp"></ImageView>
+                    <TextView
+                        android:id="@+id/productName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/image"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/varities"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/category_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/produced_by"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/produced_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/circle"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How to Grow"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/how_to_grow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/circle"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <RelativeLayout
+            android:id="@+id/addll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="end|center_vertical"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB">
+            <RelativeLayout
+                android:id="@+id/rlLogin"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:background="@drawable/yellow_bg_wound">
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/add"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

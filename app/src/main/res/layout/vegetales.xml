@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_slider"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="10sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10dp"
+                    android:isScrollContainer="true"
+                    android:gravity="center"
+                    android:text=""></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EBFFE5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp">
+
+
+                        <TextView
+                            android:id="@+id/basketName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:text="Small Basket"></TextView>
+
+                        <TextView
+                            android:id="@+id/edt_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5sp"
+                            android:src="@drawable/ic_edit"
+                            android:text="\u20B9 0"
+                            android:textStyle="bold"
+                            android:textColor="@color/orange"
+                            android:textSize="20sp"></TextView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/smallBasket"
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#B7C21C"
+                        android:background="@drawable/outline_blue">
+
+                        <TextView
+                            android:id="@+id/smallTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textColor="@color/color_white"
+                            android:text="Small Basket"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mediumBasket"
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/outline_blue">
+
+                        <TextView
+                            android:id="@+id/mediumTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            android:text="Medium Basket"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LargeBasket"
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5sp"
+                        android:background="@drawable/outline_blue">
+
+                        <TextView
+                            android:id="@+id/largeTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            android:text="Large Basket"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/customBasket"
+                        android:layout_width="0dp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/outline_blue">
+
+                        <TextView
+                            android:id="@+id/customTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            android:text="Custom Basket"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/category_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

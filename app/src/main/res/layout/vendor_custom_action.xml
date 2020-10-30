@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customActionBar_llMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_green_color">
+    <ImageView
+        android:id="@+id/ivDrawer"
+        android:layout_width="55.0dip"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_home_menu" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="55.0dip"
+            android:layout_height="55dp"
+            android:padding="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/txt_title"
+            android:src="@drawable/ic_launcher" />
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/app_name"
+            android:text="Vendor"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:textSize="25.0dip" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginRight="25sp"
+        android:src="@drawable/ic_info"
+        android:tint="@color/color_white"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/ivCollectionHistory"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25sp"
+        app:srcCompat="@drawable/ic_h_letter"
+        android:tint="@color/color_white"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/ivSaleRequestHistory"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25sp"
+        app:srcCompat="@drawable/ic_sale_request"
+        android:layout_height="30dp"/>
+</RelativeLayout>

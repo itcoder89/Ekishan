@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <View
+            android:id="@+id/circle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/orange"
+            android:background="@drawable/circle_greeen"/>
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/circle"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:text="Apple Washington" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:text="₹120.00"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/checkbox"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:buttonTint="@color/orange"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

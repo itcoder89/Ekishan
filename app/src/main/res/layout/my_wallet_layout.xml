@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_wallet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/ur_wallet_bal" />
+
+        <TextView
+            android:id="@+id/wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B7C21C"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:text="0 Rs" />
+
+        <LinearLayout
+            android:id="@+id/addMoney"
+            android:layout_width="150dp"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#B7C21C"
+            android:background="@drawable/outline_blue">
+
+            <TextView
+                android:id="@+id/smallTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_white"
+                android:text="@string/add_money"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/transaction"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_below="@+id/main"
+        android:textColor="#B7C21C"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_order_recycle"
+        android:layout_below="@+id/trans"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/noFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No transaction history found!"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_below="@+id/trans"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"></TextView>
+
+</RelativeLayout>
